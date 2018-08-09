@@ -1,0 +1,19 @@
+import os
+import subprocess as SP
+import fileinput as FI
+import re
+
+#%%
+
+wd = 'C:\Users\Alistair\Documents\ihm_itn_to_osm'
+
+#%%
+# Convert shapefile to OSM file (!!! not working at the mo, OSM file is empty)
+
+f_ogr2osm = 'C:\Users\Alistair\Documents\ihm_itn_to_osm\ogr2osm-master\ogr2osm.py'
+infl = '\"PG:dbname=postgres user=pgis password=pgis host=127.0.0.1 port=5434\"'
+table ='\"SELECT gid osm_id, fid fid, dir_drive highway, NULL waterway, NULL aerialway, NULL barrier, NULL man_made, 3 z_order, gradesep0::char||gradesep1::char other_tags, the_geom FROM itn_2016_out.itn_routing\"'
+outfl = os.path.join(wd,'BHX2_ITN2016_WGSrouting2.osm')
+
+cmd_2osm = ' '.join(['python', f_ogr2osm, infl, '--sql='+table ,'-o', outfl])
+print(cmd_2osm)
