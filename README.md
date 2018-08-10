@@ -1,4 +1,5 @@
-# Inclusive and Healthy Mobility - Readme
+# Inclusive and Healthy Mobility
 
-The current repo covers a selection of projects which together cover the Inclusive and Healthy Mobility Project. Details of each section are included in the Wiki.
+This repo contains code and instructions for the computation of accessibility based on ATCO-CIF/GTFS bus timetables and either OpenStreetMap or Ordnance Survey ITN data.
 
+Instructions for the creation of the various constituent datasets and running the analysis can be seen in the wiki.
