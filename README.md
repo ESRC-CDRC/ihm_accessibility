@@ -1,5 +1,9 @@
-# Inclusive and Healthy Mobility
+# IHM Accessibility Analysis
 
-This repo contains code and instructions for the computation of accessibility based on ATCO-CIF/GTFS bus timetables and either OpenStreetMap or Ordnance Survey ITN data.
+This repository is a collection of code required for the computation of accessibility based on bus timetables and Ordnance Survey ITN network data. The goal of the analysis is to better understand long term shifts in accessibility to key POIs such as hospital, supermarkets and retail centres.
 
-Instructions for the creation of the various constituent datasets and running the analysis can be seen in the wiki.
+Instructions for the computation of accessibility are provided in the project Wiki.
+
+The following work has been completed as part of the Inclusive and Healthy Mobility project at UCL. For further details about the project see https://www.cdrc.ac.uk/research/healthymobility/.
+
+ESRC Project Code: ES/P010741/1
